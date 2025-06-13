@@ -1,0 +1,108 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --card-bg: white;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 1rem;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #f1f1f1;
+  --card-bg: #2a2a2a;
+}
+
+header, footer {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+header button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+section {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+  padding: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+pre, code {
+  background-color: var(--border-color);
+  color: var(--text-color);
+  padding: 0.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.preview {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.styled h1 {
+  color: blue;
+  font-family: Arial;
+}
+
+/* Flexbox demo */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.item {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 50px;
+  text-align: center;
+}
+/* Flexbox ejemplo */
+.contenedor {
+  display: flex;
+  justify-content: center; /* Alinea al centro horizontalmente */
+  align-items: center;     /* Alinea al centro verticalmente si tiene altura */
+  gap: 1rem;               /* Espacio entre elementos */
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #e6f7ff;
+  border: 2px dashed #007acc;
+  border-radius: 8px;
+}
+
+.item {
+  background-color: #007acc;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 60px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
