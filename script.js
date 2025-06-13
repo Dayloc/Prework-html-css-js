@@ -1,16 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const themeToggle = document.getElementById("theme-toggle");
+const toggleBtn = document.getElementById('theme-toggle');
   const mensaje = document.getElementById("mensaje");
   const hora = document.getElementById("hora");
 
   // Cambiar tema
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-      
-    });
-  }
-
+  toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+});
   // Función saludo
   window.saludar = function () {
     if (mensaje) {
